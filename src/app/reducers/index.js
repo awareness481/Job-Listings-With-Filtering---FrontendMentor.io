@@ -13,7 +13,7 @@ function data(state = [], action) {
     case RECEIVE_JOB_LISTINGS:
       return {
         ...state,
-        jobs: action.jobs
+        ...action.jobs
       }
     default:
       return state;
