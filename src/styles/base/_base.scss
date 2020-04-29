@@ -1,0 +1,29 @@
+// COLORS
+
+$dark-cyan: hsl(180, 29%, 50%);
+
+$light-gray-cyan-bg: hsl(180, 52%, 96%);
+$light-gray-cyan-filter: hsl(180, 31%, 95%);
+$dark-grayish-cyan: hsl(180, 8%, 52%);
+$dark-grayish-cyan-2: hsl(180, 14%, 20%);
+
+//fonts
+
+@font-face {
+    font-family: 'Spartan', sans-serif;
+    src: url('../fonts/Spartan-Medium.ttf') format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Spartan', sans-serif;
+    src: url('../fonts/Spartan-Bold.ttf') format("truetype");
+    font-weight: 700;
+    font-style: bold;
+}
+
+body {
+    font-family: 'Spartan';
+    font-weight: 500;
+}
