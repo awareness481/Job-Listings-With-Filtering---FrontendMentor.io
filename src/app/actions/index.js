@@ -7,7 +7,7 @@ export const RECEIVE_JOB_LISTINGS = 'RECEIVE_JOB_LISTINGS';
 const receiveJobListings = (json) => ({
   type: RECEIVE_JOB_LISTINGS,
   jobs: json
-})
+});
 
 export const fetchJobs = () => {
   return function(dispatch) {
@@ -23,3 +23,15 @@ export const fetchJobs = () => {
       )
   }
 }
+
+export const SET_FILTERS = 'SET_FILTERS';
+const setFilters = (filter) => ({
+  type: SET_FILTERS,
+  filter
+});
+
+export const FILTER_JOBS = 'FILTER_JOBS';
+const filterJobs = (jobs) => ({
+  type: FILTER_JOBS,
+  jobs
+});
