@@ -1,18 +1,20 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import { fetchJobs } from './app/actions/index';
-import JobListings from './components/JobListings';
+import React, { useEffect } from "react";
+import { connect } from "react-redux";
+import { loadData } from "./app/actions/index";
+import JobListings from "./components/JobListings";
 
+function App({ dispatch }) {
+  useEffect(() => {
+    dispatch(loadData());
+  }, []);
 
-function App({dispatch}) {
-  dispatch(fetchJobs());
   return (
-    <div className='App'>
+    <div className="App">
       <JobListings />
     </div>
   );
 }
 
-const mapStateToProps = (state) => ({listings: state.jobs});
+const mapStateToProps = (state) => ({ jobs: state.listings });
 
 export default connect(mapStateToProps)(App);

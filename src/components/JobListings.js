@@ -2,42 +2,41 @@ import React, { useState, useEffect} from "react";
 import { connect } from "react-redux";
 import Job from "./JobSingleListing";
 
-import { SET_FILTERS, FILTER_JOBS } from "../app/actions/index";
+import { SET_FILTERS, FILTER_JOBS, fetchJobs } from "../app/actions/index";
 
 
 
 
-const JobListings = ({ form, jobs, dispatch, setFilters, filterJobs }) => {
-  
+const JobListings = ({ filters, dispatch, filteredJobs, jobs, setFilters, filterJobs }) => {
 
-  console.log(jobs);
+
+  console.log('Job Listings', jobs)
   useEffect(() => {
-    dispatch({
-      type: SET_FILTERS,
-      filter: 'HTML'
-    })
-
-  }, [])
-
-  useEffect(() => {
-    dispatch({
+    if (jobs) {dispatch({
       type: FILTER_JOBS,
       jobs
-    })
-  }, [jobs])
+    })}
+  }, [filters])
+  
 
-  // jobs ? filterJobs(jobs) : '';
+  const mapJobs = (jobs) => {
+    if (!jobs) return;
+    return jobs.map((job) => (<div>{job.id}</div>))
+  }
 
   return (
     <div className='listings'>
-      listings
+      {
+        jobs ? mapJobs(jobs) : mapJobs(filteredJobs)
+      }
     </div>
   );
 };
 
 const mapStateToProps = (state) => ({
   filters: state.form.filters,
-  jobs: state.listings,
+  filteredJobs: state.form.filteredListings,
+  jobs: state.listings
 });
 
 const mapDispatchToProps = (dispatch) => {
