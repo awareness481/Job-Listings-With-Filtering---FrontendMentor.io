@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { loadData } from "./app/actions/index";
 import JobListings from "./components/JobListings";
+import NavBar from './components/Navbar';
+import SearchForm from './components/SearchForm';
 
 function App({ dispatch }) {
   useEffect(() => {
@@ -10,7 +12,8 @@ function App({ dispatch }) {
 
   return (
     <div className="App">
-      <JobListings />
+      <NavBar />
+      <SearchForm />
     </div>
   );
 }

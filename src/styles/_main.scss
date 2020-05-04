@@ -1,5 +1,11 @@
-@import '~normalize.css/normalize.css';
+@import "/node_modules/tailwindcss/base.css";
+
+@import "/node_modules/tailwindcss/components.css";
+
+@import "/node_modules/tailwindcss/utilities.css";
 @import 'base/base';
+
+@import './components/navbar';
 
 html {
     font-size: 62.5%;
