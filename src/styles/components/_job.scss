@@ -1,0 +1,19 @@
+.job {
+    &__details {
+        &__title {
+            color: $dark-cyan;
+        }
+
+        &__position {
+            color: $dark-grayish-cyan-2;
+
+            &:hover {
+                color: $dark-cyan;
+            }
+        }
+
+        &__info {
+            color: $dark-grayish-cyan;
+        }
+    }
+}

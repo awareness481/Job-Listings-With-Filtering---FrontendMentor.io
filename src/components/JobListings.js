@@ -25,10 +25,12 @@ const JobListings = ({ filters, dispatch, filteredJobs, jobs, setFilters, filter
   }
 
   return (
-    <div className='listings'>
-      {
+    <div className='listings w-full pt-16'>
+      {/* {
         jobs ? mapJobs(jobs) : mapJobs(filteredJobs)
-      }
+      } */}
+      <Job />
+      <Job />
     </div>
   );
 };

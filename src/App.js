@@ -14,6 +14,7 @@ function App({ dispatch }) {
     <div className="App">
       <NavBar />
       <SearchForm />
+      <JobListings />
     </div>
   );
 }

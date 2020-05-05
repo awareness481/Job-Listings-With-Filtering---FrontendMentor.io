@@ -24,6 +24,8 @@ $dark-grayish-cyan-2: hsl(180, 14%, 20%);
 }
 
 body {
-    font-family: 'Spartan';
+    font-family: 'Spartan', sans-serif;
     font-weight: 500;
+    font-size: 1.5rem;
+    background-color: $light-gray-cyan-bg;
 }
