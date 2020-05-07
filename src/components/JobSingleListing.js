@@ -61,16 +61,33 @@ function SvgFaceit(props) {
 
 const JobSingleListing = () => {
   return (
-    <div class='job flex flex-row w-4/5 h-64 bg-white shadow-lg my-8 mx-auto items-center'>
+    <div className='job flex flex-row w-4/5 h-64 bg-white shadow-lg my-8 mx-auto items-center'>
       <SvgFaceit className='ml-16'/>
-      <div className='job__details flex flex-col justify-center ml-4 w-1/2'>
+      <div className='job__details flex flex-col justify-center ml-4'>
         <h2 className='job__details__title font-bold'>Faceit</h2>
         <h3 className='job__details__position font-bold'>Frontend Developer</h3>
-        <div className='job__details__info flex flex-row justify-between w-2/6'>
+        <div className='job__details__info flex flex-row flex-no-wrap justify-between'>
           <span>1d ago</span>
           <span>Full Time</span>
           <span>Remote</span>
         </div>
+      </div>
+      <div className='job__filters ml-auto mr-16 flex flex-row flex-wrap'>
+        <span className='job__filters__filter'>
+          HTML
+        </span>
+        <span className='job__filters__filter'>
+          Javascript
+        </span>
+        <span className='job__filters__filter'>
+          Javascript
+        </span>
+        <span className='job__filters__filter'>
+          Javascript
+        </span>
+        <span className='job__filters__filter'>
+          Javascript
+        </span>
       </div>
     </div>
   )

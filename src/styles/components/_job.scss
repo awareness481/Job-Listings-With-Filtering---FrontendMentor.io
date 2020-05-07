@@ -14,6 +14,27 @@
 
         &__info {
             color: $dark-grayish-cyan;
+            span {
+                margin-right: 1rem;
+            }
+        }
+    }
+
+    &__filters {
+        max-width: 50%;
+
+        &__filter {
+            color: $dark-cyan;
+            background-color: $light-gray-cyan-filter;
+            padding: 0.5rem 1rem;
+            font-weight: 700;
+            margin: 0.2rem 1rem;
+            border-radius: 4px;
+
+            &:hover {
+                color: #fff;
+                background-color: $dark-cyan;
+            }
         }
     }
 }
