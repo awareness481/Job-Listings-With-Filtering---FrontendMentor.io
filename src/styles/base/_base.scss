@@ -28,4 +28,9 @@ body {
     font-weight: 500;
     font-size: 1.5rem;
     background-color: $light-gray-cyan-bg;
+    min-height: 120vh;
+}
+
+.form {
+    width: 80vw;
 }

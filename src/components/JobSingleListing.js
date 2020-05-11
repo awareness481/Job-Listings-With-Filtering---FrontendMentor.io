@@ -25,7 +25,7 @@ const JobSingleListing = ({ job, dispatch }) => {
   };
 
   return (
-    <div className="job flex flex-row w-4/5 h-64 bg-white shadow-lg my-8 mx-auto items-center">
+    <div className="job flex flex-row h-64 bg-white shadow-lg my-8 mx-auto items-center">
       <img src={logo} className="ml-16" alt={`${company} company logo`} />
       <div className="job__details flex flex-col justify-center ml-4">
         <h2 className="job__details__title font-bold">{company}</h2>

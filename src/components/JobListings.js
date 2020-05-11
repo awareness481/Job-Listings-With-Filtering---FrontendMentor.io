@@ -27,7 +27,7 @@ const JobListings = ({ filters, dispatch, filteredJobs, jobs, setFilters, filter
   return (
     <div className='listings w-full pt-16'>
       {
-        jobs ? mapJobs(jobs) : mapJobs(filteredJobs)
+        (filters.length > 0) ? mapJobs(filteredJobs) : mapJobs(jobs)
       }
     </div>
   );
