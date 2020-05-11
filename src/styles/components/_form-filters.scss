@@ -1,0 +1,15 @@
+.form-filters {
+    &__filter {
+        background-color: $light-gray-cyan-bg;
+        color: $dark-cyan;
+    }
+
+    .toggle-filter {
+        background-color: $dark-cyan;
+        color: #fff;
+
+        &:hover {
+            background-color: $dark-grayish-cyan-2;
+        }
+    }
+}
