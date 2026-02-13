@@ -7,12 +7,12 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "node-sass": "^4.14.0",
+    "node-sass": "^9.0.0",
     "normalize.css": "^8.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.0",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "redux-devtools-extension": "^2.13.8",
     "redux-thunk": "^2.3.0",
     "tailwindcss": "^1.4.4"
@@ -44,6 +44,6 @@
     "@svgr/cli": "^5.4.0",
     "concurrently": "^5.2.0",
     "file-loader": "^6.0.0",
-    "json-server": "^0.16.1"
+    "json-server": "^0.16.3"
   }
 }
